@@ -3,7 +3,7 @@ import java.util.*;
 import java.text.*;
  
  
-public class reservasitiket 
+public class ReservasiTiket 
 {
  public static void main (String [] khamimahsanu) throws IOException
 {
@@ -66,19 +66,26 @@ public class reservasitiket
   
   int jawab=Integer.parseInt(br.readLine());
                 
-				if (jawab==1){
+				if (jawab==1)
+				{
                     batasdepan=0;
                     batasbelakang=1;
                     harga=0.75*100000+100000;
-                }else if (jawab==2){
+                }
+				else if (jawab==2)
+				{
                     batasdepan=2;
                     batasbelakang=4;
                     harga=0.5*100000+100000;
-                }else if (jawab==3){
+                }
+				else if (jawab==3)
+				{
                     batasdepan=5;
                     batasbelakang=9;
                     harga=0.3*100000+100000;
-                }else if (jawab==4){
+                }
+				else if (jawab==4)
+				{
                     batasdepan=10;
                     batasbelakang=14;
                     harga=100000;
@@ -86,15 +93,16 @@ public class reservasitiket
                 
               int kursikosong=0;
               int jumlah=0;
-               for(int i=batasdepan;i<batasbelakang+1;i++)
+               
+			   for(int i=batasdepan;i<batasbelakang+1;i++)
   {
    for(int j=0;j<bangku[i].length;j++)
    {
     if(bangku[i][j]==0)
     {
-                                    kursikosong++;
-                                }
-                    }
+    kursikosong++;
+    }
+   }
   }
                 
                 System.out.println("\nJumlah kursi tersedia : "+kursikosong);
@@ -199,6 +207,10 @@ public class reservasitiket
                 }
     break;
     case 4 :
+	System.out.println();
+	System.out.println("****************************************");
+	System.out.println("Terimakasih Telah Memesan Tiket Murah :D");
+	System.out.println("****************************************");
       System.exit(0);
       break;
        default: break;
