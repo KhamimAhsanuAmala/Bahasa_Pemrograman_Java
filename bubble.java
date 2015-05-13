@@ -8,17 +8,19 @@ public class bubble
     
     public int max = data.length;
     
-    public void tukar(int a, int b){
+    public void tukar(int a, int b)
+	{
         int temp;
         temp = data[b];
         data[b] = data[a];
-        data[a] = temp;
+	data[a] = temp; 
     }
     
     public void output()
 	{
         int i;
-        for (int j = 0; j <= max-1; j++) {
+        for (int j = 0; j <= max-1; j++) 
+		{
             System.out.print(data[j]+" ");
         }
         System.out.println();
@@ -39,7 +41,8 @@ public class bubble
     }
     
     
-    public void sortBubbleDesc(){
+    public void sortBubbleDesc()
+	{
         int a, b;
         int n = max-1;
         for (int i = 0; i <= n-1; i++) {
@@ -54,7 +57,7 @@ public class bubble
     }
     
     
-    public static void main(String[] khamim) 
+    public static void main(String [] khamim) 
 	{
         bubble ins = new bubble();
         Scanner input = new Scanner(System.in);
